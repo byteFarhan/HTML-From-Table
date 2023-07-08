@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice file</title>
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+        } */
+
+        main {
+            width: 1250px;
+            height: auto;
+            margin: auto;
+        }
+
+        ul {
+            display: flex;
+            margin-right: 10px;
+        }
+
+        ul li {
+            margin-right: 15px;
+            list-style: none;
+        }
+
+        ul li a {
+            text-decoration: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            margin: auto;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 5px 20px;
+        }
+
+        caption {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0px;
+        }
+
+        #name,
+        #email,
+        #number,
+        #password,
+        #dateofbirth {
+            margin-top: 5px;
+            width: 250px;
+        }
+
+        fieldset {
+            width: 240px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Back</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <table>
+            <caption>HTML Table</caption>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Company</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Elon Mask</td>
+                    <td>Tesla</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Mark Zucu</td>
+                    <td>Facebook</td>
+                    <td>$900</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Steve Jobs</td>
+                    <td>Apple</td>
+                    <td>$1200</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Larry Page</td>
+                    <td>Google</td>
+                    <td>$1150</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Total: $4250</td>
+                </tr>
+            </tfoot>
+        </table>
+        <section style="margin-left: 500px;">
+
+            <form action="">
+                <label for="name"> Your Name: <br>
+                    <input id="name" type="text" placeholder="Enter your name">
+                </label>
+                <label for="email">Your Email: <br><input id="email" type="email"
+                        placeholder="Enter your email"></label>
+                <label for="dateofbirth">Date of birth: <br><input type="date" name="date" id="dateofbirth"></label>
+                <label for="number">Number: <br> <input type="number" id="number" placeholder="Phone number"></label>
+                <label for="password">password: <br> <input type="password" id="password"
+                        placeholder="password"></label>
+                <fieldset>
+                    <legend>What is your gender? </legend>
+                    <label for="male"> <input type="radio" name="gender" id="male">Male
+                    </label>
+                    <label for="female"> <input type="radio" name="gender" id="female">Female
+                    </label>
+                    <label for="custom"> <input type="radio" name="gender" id="custom">Custom
+                    </label>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Add your skils!</legend>
+                    <label for="html"><input type="checkbox" name="skill" id="html"> HTML</label>
+                    <label for="css"><input type="checkbox" name="skill" id="css">CSS</label>
+                    <label for="JavaScript"><input type="checkbox" name="skill" id="javaScript">JAVASCRIPT</label>
+
+                    <label for="react"><input type="checkbox" name="skill" id="react">REACT</label>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Send us your feedback...!</legend>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </fieldset>
+                <label for="myfile">Select a file:</label>
+                <label for="file"><input type="file" name="myfile" id="myfile"></label>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+
+            </form>
+        </section>
+    </main>
+
+
+    <div style="height:600px;"></div>
+    <footer></footer>
+</body>
+
+</html>
